@@ -3,5 +3,6 @@
     <br>
     <input type="password" placeholder = "Enter your password" name = "password" required>
     <br>
+    <?php echo $data['url']?>
     <input type="submit" value = "login">
 </form>
