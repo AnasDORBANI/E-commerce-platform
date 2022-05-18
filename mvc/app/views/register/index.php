@@ -20,6 +20,13 @@ require_once ROOTPATH."views/templates/header.php"
             </div>
         </div>
         <div class="mb-3">
+            <label class="form-label">Username</label>
+            <div class="box-container row px-2 gap-3">
+                <input class="form-control d-inline-block col inline" type="text" placeholder="Username"
+                    name="username" erequired>
+            </div>
+        </div>
+        <div class="mb-3">
             <label class="form-label">Email</label>
             <div class="box-container row px-2 gap-3">
                 <input class="form-control d-inline-block col inline" type="email" placeholder="Email"

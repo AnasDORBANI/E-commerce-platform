@@ -60,7 +60,7 @@
         //Return a specific row as an object
         public function single() {
             $this->execute();
-            return $this->statement->fetch(PDO::FETCH_OBJ);
+            return $this->statement->fetch();
         }
 
         //Get's the row count

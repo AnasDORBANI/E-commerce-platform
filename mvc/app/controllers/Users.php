@@ -14,8 +14,9 @@ class Users extends Controller {
 
     public function login (){
         $this->view('login/index',['title' => 'Login']);
+
         //Snitize post data
-        $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+        //$_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
         //Init data
         $data = [
@@ -29,9 +30,10 @@ class Users extends Controller {
         } 
         
         //Search for the user
-        $user = json_decode(json_encode($this->userModel->findUserByEmailOrUsername($data['username'])),true);
+        $user = $this->userModel->findUserByEmailOrUsername($data['username']);
+
         if ($user){
-            if (password_verify($data['password'],$user['password'])){
+            if (password_verify($data['password'],$user['Password'])){
                 session_start();
                 $_SESSION['user'] = $data["username"];
                 redirect('home');
@@ -44,6 +46,23 @@ class Users extends Controller {
 
     public function register (){
         $this->view('register/index',['title' => 'Register']);
+
+        $data = [
+            'firstName' => trim($_POST['fName']),
+            'lastName' => trim($_POST['lName']),
+            'username' => trim($_POST['username']),
+            'email' => trim($_POST['email']),
+            'password' => trim($_POST['password']),
+            'sexe' => trim($_POST['sexe']),
+            'address' => trim($_POST['address']),
+            'birthDay' => trim($_POST['bDay']),
+            'username' => trim($_POST['username']),
+        ];
+
+        
+
+        
+
     }
 
     public function logout (){
