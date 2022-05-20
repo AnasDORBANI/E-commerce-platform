@@ -5,37 +5,42 @@ require_once TEMPLATES."header.php";
 
 <!-- Page Content -->
 <div class="page-heading products-heading header-text">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="text-content">
-          <h4>new arrivals</h4>
-          <h2>sixteen products</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-content">
+                    <h4>new arrivals</h4>
+                    <h2>sixteen products</h2>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
 
+<form class="input-group container w-50 mt-5" action="<?=URLROOT?>home/search">
+    <input type="search" class="form-control rounded-0" name="keywords" placeholder="Search" aria-label="Search"
+        aria-describedby="search-addon" />
+    <button type="submit" class="btn btn-outline-danger rounded-0"><i class="bi bi-search"></i> search</button>
+</form>
 
 <div class="products">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="filters">
-          <ul>
-            <li class="active" data-filter="*">All Products</li>
-            <li data-filter=".des">Featured</li>
-            <li data-filter=".dev">Flash Deals</li>
-            <li data-filter=".gra">Last Minute</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-12">
-        <div class="filters-content">
-            <div class="row grid">
-              <!-- Start Products -->
-              <?php
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="filters">
+                    <ul>
+                        <li class="active" data-filter="*">All Products</li>
+                        <li data-filter=".des">Featured</li>
+                        <li data-filter=".dev">Flash Deals</li>
+                        <li data-filter=".gra">Last Minute</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="filters-content">
+                    <div class="row grid">
+                        <!-- Start Products -->
+                        <?php
                 foreach ($data['products'] as $product){
                     echo '<div class="col-lg-4 col-md-4 all des">
                             <div class="product-item">
@@ -49,21 +54,21 @@ require_once TEMPLATES."header.php";
                           </div>';
                 }
               ?>
-              <!-- End Products -->
+                        <!-- End Products -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <ul class="pages">
+                    <li><a href="#">1</a></li>
+                    <li class="active"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                </ul>
             </div>
         </div>
-      </div>
-      <div class="col-md-12">
-        <ul class="pages">
-          <li><a href="#">1</a></li>
-          <li class="active"><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-        </ul>
-      </div>
     </div>
-  </div>
 </div>
 
 
