@@ -57,4 +57,14 @@ class Home extends Controller
         $this->homeModel->removeFromCart($cart_id);
         redirect('home/cart');
     }
+
+    public function payement($product){
+        $this->view('payement/index');
+    }
+
+    public function checkPayement(){
+        $this->homeModel->checkPayement();
+        $valid = true;
+        $this->view('payement/valid',['valid'=>$valid]);
+    }
 }

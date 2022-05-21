@@ -82,4 +82,8 @@ class Product
         session_start();
         $this->db->execute([$cart_id]);
     }
+
+    public function checkPayement(){
+        
+    }
 }
