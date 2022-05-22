@@ -23,13 +23,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <link href="<?=ASSETS."main/"?>vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <!--
-
-    TemplateMo 546 Sixteen Clothing
-
-    https://templatemo.com/tm-546-sixteen-clothing
-
-    -->
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="<?=ASSETS."main/"?>css/fontawesome.css">
@@ -49,7 +42,7 @@
     </div>
     <!-- ***** Preloader End ***** -->
 
-    <!-- Header -->
+    <!-- Header Start -->
     <header class="">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -77,11 +70,16 @@
                             <a class="nav-link" href="<?=URLROOT?>home/contact">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-danger" href="<?=URLROOT?>Users/logout">Logout <i
-                                    class="bi bi-box-arrow-right"></i></a>
+                            <a class="nav-link btn btn-outline-danger rounded-0" href="<?=URLROOT?>home/cart"><i
+                                    class="bi bi-basket3-fill"></i> Cart </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-danger rounded-0" href="<?=URLROOT?>Users/logout">Logout
+                                <i class="bi bi-box-arrow-right"></i></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <!-- Header End -->

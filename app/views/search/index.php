@@ -6,7 +6,7 @@ require_once TEMPLATES."header.php";
     <form class="input-group container w-50 mt-5" action="<?=URLROOT?>home/search">
         <input type="search" class="form-control rounded-0" name="keywords" placeholder="Search" aria-label="Search"
             aria-describedby="search-addon" />
-        <button type="submit" class="btn btn-outline-danger rounded-0"><i class="bi bi-search"></i> search</button>
+        <button type="submit" class="btn btn-danger rounded-0"><i class="bi bi-search"></i> search</button>
     </form>
 </div>
 
