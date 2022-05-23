@@ -35,9 +35,9 @@ require_once TEMPLATES."header.php";
                                 <i class="bi bi-cart-plus-fill"></i>
                             </div>
                             <div class="mt-4 mb-3">
-                                <h5 class="text-uppercase"><?= $data['product'][1] ?></h5>
+                                <h5 class="text-uppercase h2"><?= $data['product'][1] ?></h5>
                                 <div class="price d-flex flex-row align-items-center">
-                                    <span class="act-price">Price $<?=$data['product'][6]?></span>
+                                    <span class="act-price h3">$<?=$data['product'][6]?></span>
                                 </div>
                             </div>
                             <p class="about"><?= $data['product'][3] ?></p>

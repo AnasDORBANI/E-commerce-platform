@@ -6,8 +6,8 @@ require_once TEMPLATES."header.php";
 <div style="padding-top : 60px"></div>
 <h1 class="text-center m-5">Payement</h1>
 <div class="container">
-    <div class="row">
-        <div class="">
+    <div class="row d-flex justify-content-center">
+        <div class="col col-md-6">
             <!-- Credit card form content -->
             <div class="tab-content">
                 <!-- credit card info-->
@@ -56,7 +56,7 @@ require_once TEMPLATES."header.php";
                                     <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
                                         <h6>CVV</h6>
                                     </label>
-                                    <input type="text" required class="form-control rounded-0">
+                                    <input type="password" required class="form-control rounded-0" placeholder="123">
                                 </div>
                             </div>
                         </div>
