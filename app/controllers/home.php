@@ -12,40 +12,40 @@ class Home extends Controller
     {
         $products = $this->homeModel->latestProducts();
         $active = ["active",'','',''];
-        $this->view('home/index',['products'=>$products, 'active'=>$active, 'title'=>'Home']);
+        $this->view('main/home/index',['products'=>$products, 'active'=>$active, 'title'=>'Home']);
     }
 
     public function products(){
         $products = $this->homeModel->allProducts();
         $active = ["",'active','',''];
-        $this->view('products/index',['products'=>$products, 'active'=>$active,'title'=>'Our Products']);
+        $this->view('main/products/index',['products'=>$products, 'active'=>$active,'title'=>'Our Products']);
 
     }
 
     public function product($data){
         $product = $this->homeModel->oneProduct($data);
-        $this->view('product/index',['product'=>$product, 'title'=>'Product']);
+        $this->view('main/product/index',['product'=>$product, 'title'=>'Product']);
     }
 
     public function about(){
         $active = ["",'','active',''];
-        $this->view('about/index',['product'=>$product,'active'=>$active, 'title'=>'About Us']);
+        $this->view('main/about/index',['product'=>$product,'active'=>$active, 'title'=>'About Us']);
     }
 
     public function contact(){
         $active = ["",'','','active'];
-        $this->view('contact/index',['product'=>$product, 'active'=>$active, 'title'=>'Contact Us']);
+        $this->view('main/contact/index',['product'=>$product, 'active'=>$active, 'title'=>'Contact Us']);
     }
 
     public function search(){
         $products = $this->homeModel->search($_GET['keywords']);
-        $this->view('search/index',['products'=>$products, 'title'=> 'Search | '.$_GET['keywords']]);
+        $this->view('main/search/index',['products'=>$products, 'title'=> 'Search | '.$_GET['keywords']]);
     }
 
     public function cart(){
         session_start();
         $products = $this->homeModel->getCart($_SESSION['user']);
-        $this->view('cart/index',['title'=>'Cart', 'products'=>$products]);
+        $this->view('main/cart/index',['title'=>'Cart', 'products'=>$products]);
     }
 
     public function addToCart($product){
@@ -59,12 +59,12 @@ class Home extends Controller
     }
 
     public function payement($product){
-        $this->view('payement/index');
+        $this->view('main/payement/index');
     }
 
     public function checkPayement(){
         $this->homeModel->checkPayement();
         $valid = true;
-        $this->view('payement/valid',['valid'=>$valid]);
+        $this->view('main/payement/valid',['valid'=>$valid]);
     }
 }

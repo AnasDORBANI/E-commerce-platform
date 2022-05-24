@@ -1,6 +1,6 @@
 <?php
 if(!$data['valid']){
-    redirect('home/index');
+    redirect('main/home/index');
 }
 ?>
 

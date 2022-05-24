@@ -26,12 +26,25 @@
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="<?=ASSETS."main/"?>css/fontawesome.css">
-    <link rel="stylesheet" href="<?=ASSETS."main/"?>css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="<?=ASSETS."main/"?>css/main.css">
     <link rel="stylesheet" href="<?=ASSETS."main/"?>css/owl.css">
 
 </head>
 
 <body>
+
+
+    <?php
+        session_start();
+        if($_SESSION['type']=='ADMIN'){
+        echo '
+    <a href="'.URLROOT.'admin" class="btn btn-danger text-center rounded-circle d-flex align-items-center justify-content-center"
+    style="position:fixed;bottom:20px;right:20px;font-size:30px; width:60px; height:60px; padding:0px; margin:0px">
+    <i class="bi bi-gear"></i>
+    </a>
+        ';
+        }
+    ?>
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
         <div class="jumper">

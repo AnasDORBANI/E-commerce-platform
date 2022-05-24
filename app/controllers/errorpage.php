@@ -3,6 +3,6 @@
 class ErrorPage extends Controller {
     public function index(){
 
-        $this->view('errorpage/index');
+        $this->view('main/errorpage/index');
     }
 }

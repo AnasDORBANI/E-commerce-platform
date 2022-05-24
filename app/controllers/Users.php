@@ -9,11 +9,11 @@ class Users extends Controller {
     }
 
     public function index(){
-        $this->view('login/index',['title' => 'Login']);
+        $this->view('user/login/index',['title' => 'Login']);
     }
 
     public function login (){
-        $this->view('login/index',['title' => 'Login']);
+        $this->view('user/login/index',['title' => 'Login']);
     }
 
     public function init_session (){
@@ -32,13 +32,14 @@ class Users extends Controller {
         }
         //Search for the user
         $user = $this->userModel->findUserByUsername($data['username']);
+        print_r($user);
         if ($user){
             if (password_verify($data['password'],$user['Password'])){
-                ?>
-                <?php
+                
                 session_start();
-                $_SESSION['user'] = $data["username"];
-                //$this->view('home/index',['title' => 'home']);
+                $_SESSION['user'] = $user["userName"];
+                $_SESSION['type'] = $user['type'];
+                //$this->view('main/home/index',['title' => 'home']);
                 redirect('home');
             }
         }
@@ -47,7 +48,7 @@ class Users extends Controller {
     }
 
     public function register (){
-        $this->view('register/index',['title' => 'Register']);
+        $this->view('user/register/index',['title' => 'Register']);
     }
 
     public function addUser () {
@@ -80,6 +81,6 @@ class Users extends Controller {
         session_start();
         session_unset();
         session_destroy();
-        $this->view('login/index',['title' =>'Login']);
+        $this->view('user/login/index',['title' =>'Login']);
     }
 }

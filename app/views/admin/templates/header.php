@@ -21,6 +21,12 @@
 	-->
 </head>
 
+<a href="<?=URLROOT?>home"
+    class="btn btn-danger text-center rounded-circle d-flex align-items-center justify-content-center"
+    style="position:fixed;bottom:20px;right:20px;font-size:30px; width:60px; height:60px; padding:0px; margin:0px">
+    <i class="bi bi-shop-window"></i>
+</a>
+
 <body id="reportsPage">
     <div class="" id="home">
         <nav class="navbar navbar-expand-xl">
@@ -36,11 +42,6 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto h-100">
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?=URLROOT?>home">
-                                <i class=" fa fa-home" aria-hidden="true"></i> Home
-                            </a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link <?=$data['active'][0]?>" href="<?=URLROOT?>admin">
                                 <i class="fas fa-tachometer-alt"></i>
