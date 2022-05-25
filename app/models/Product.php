@@ -83,7 +83,10 @@ class Product
         $this->db->execute([$cart_id]);
     }
 
-    public function checkPayement(){
-        
+    public function checkPayement($product){
+        session_start();
+        $sql = "INSERT INTO purchases VALUES(null,null,?,?)";
+        $this->db->query($sql);
+        $this->db->execute([$_SESSION['user'],$product]);
     }
 }

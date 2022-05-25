@@ -13,7 +13,7 @@ html {
 
 body {
     font-family: Roboto, Helvetica, Arial, sans-serif;
-    background-color: #4e657a;
+    /* background-color: #4e657a; */
     overflow-x: hidden;
 }
 
@@ -49,7 +49,7 @@ button:focus {
 
 .navbar {
     height: 100px;
-    background-color: #567086;
+    background-color: #232323;
     padding: 0;
 }
 
@@ -79,9 +79,9 @@ button:focus {
 
 .tm-block {
     padding: 40px;
-    -webkit-box-shadow: 1px 1px 5px 0 #455c71;
-    -moz-box-shadow: 1px 1px 5px 0 #455c71;
-    box-shadow: 1px 1px 5px 0 #455c71;
+    -webkit-box-shadow: 1px 1px 5px 0 #1d1d1d;
+    -moz-box-shadow: 1px 1px 5px 0 #1d1d1d;
+    box-shadow: 1px 1px 5px 0 #1d1d1d;
     min-height: 350px;
     height: 100%;
     max-height: 450px;
@@ -141,7 +141,7 @@ button:focus {
 .dropdown-menu {
     font-size: 90%;
     color: #fff;
-    background-color: #567086;
+    background-color: #232323;
     border-radius: 0;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -155,7 +155,7 @@ button:focus {
 
 .navbar-nav .active>.nav-link,
 .navbar-nav .nav-link.active {
-    background-color: #ff6300;
+    background-color: #dc3545;
     color: #fff;
 }
 
@@ -165,12 +165,12 @@ button:focus {
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-    background-color: #567086;
+    background-color: #232323;
 }
 
 .navbar-nav a:hover,
 .navbar-nav a:hover i {
-    color: #ff6300;
+    color: #dc3545;
 }
 
 .nav-item {
@@ -225,7 +225,7 @@ button:focus {
 
 .tm-notification-item {
     padding: 15px;
-    background-color: #4e657a;
+    /* background-color: #4e657a; */
     color: #fff;
     font-size: 95%;
     margin-bottom: 15px;
@@ -236,7 +236,7 @@ button:focus {
 }
 
 .tm-notification-link {
-    color: #ff6300;
+    color: #dc3545;
 }
 
 .tm-text-color-secondary {
@@ -248,14 +248,14 @@ button:focus {
 }
 
 .table {
-    background-color: #50697f;
+    background-color: rgb(42, 42, 42);
     color: #fff;
     font-size: 85%;
     margin-bottom: 0;
 }
 
 thead {
-    background-color: #486177;
+    background-color: #222222;
     color: #fff;
 }
 
@@ -412,17 +412,17 @@ thead {
 
 .btn-primary {
     color: #fff;
-    background-color: #ff6300;
-    border: 2px solid #ff6300;
+    background-color: #dc3545;
+    border: 2px solid #dc3545;
     font-size: 90%;
     font-weight: 600;
 }
 
 .btn-primary:active,
 .btn-primary:hover {
-    color: #ff6300;
+    color: #dc3545;
     background-color: transparent;
-    border: 2px solid #ff6300;
+    border: 2px solid #dc3545;
 }
 
 .custom-file-input {
@@ -435,7 +435,7 @@ thead {
 
 .table td,
 .table th {
-    border-top: 1px solid #415a70;
+    border-top: 1px solid #4e4e4e;
     padding: 15px 25px;
     vertical-align: middle;
 }
@@ -455,7 +455,7 @@ thead {
 }
 
 .tm-bg-primary-dark {
-    background-color: #435c70;
+    background-color: #232323;
 }
 
 .tm-bg-gray {
@@ -503,7 +503,7 @@ input[type="checkbox"] {
     cursor: pointer;
     -webkit-appearance: none;
     appearance: none;
-    background-color: #394e64;
+    background-color: #dc3545;
     background-position: center;
     border-radius: 50%;
     box-sizing: border-box;
@@ -515,7 +515,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-    background: url(../img/check-mark.png) #394e64 center no-repeat;
+    background: url(../img/check-mark.png) #dc3545 center no-repeat;
 }
 
 input[type="checkbox"]:focus {
@@ -524,11 +524,11 @@ input[type="checkbox"]:focus {
 }
 
 .tm-block-products {
-    min-height: 725px;
+    min-height: 600px;
 }
 
 .tm-block-product-categories {
-    min-height: 650px;
+    min-height: 600px;
 }
 
 .tm-product-table-container {
@@ -554,7 +554,7 @@ input[type="checkbox"]:focus {
 .tm-product-delete-link {
     padding: 10px;
     border-radius: 50%;
-    background-color: #394e64;
+    background-color: #dc3545;
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -598,7 +598,7 @@ input[type="checkbox"]:focus {
 }
 
 .tm-footer {
-    background-color: #567086;
+    background-color: #232323;
     padding-top: 30px;
     padding-bottom: 30px;
     -webkit-box-shadow: 0 -3px 5px 0 rgba(69, 92, 113, 0.59);
@@ -636,7 +636,7 @@ input[type="checkbox"]:focus {
 }
 
 .tm-upload-icon {
-    background: #455c71;
+    background: #1d1d1d;
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -650,16 +650,14 @@ input[type="checkbox"]:focus {
 }
 
 .navbar-toggler {
-    border-color: #708da8;
-    box-shadow: rgba(255, 255, 255, 0.1) 0 1px 1px 2px;
     border-radius: 0;
     padding: 10px 15px;
     transition: all 0.2s ease;
 }
 
 .navbar-toggler:hover {
-    border-color: #ff6300;
-    color: #ff6300;
+    border-color: #dc3545;
+    color: #dc3545;
 }
 
 .tm-nav-icon {
@@ -667,7 +665,7 @@ input[type="checkbox"]:focus {
 }
 
 .navbar-toggler:hover .tm-nav-icon {
-    color: #ff6300;
+    color: #dc3545;
 }
 
 ::-webkit-scrollbar {
@@ -676,15 +674,15 @@ input[type="checkbox"]:focus {
 }
 
 ::-webkit-scrollbar-track {
-    background: #394f62;
+    background: #242424;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #6d8da6;
+    background: #3d3d3d;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #8ab5d6;
+    background: #505050;
 }
 
 .tm-footer-link {
@@ -743,7 +741,7 @@ input[type="checkbox"]:focus {
     }
     .nav-link {
         color: #fff;
-        background-color: #567086;
+        background-color: #232323;
         padding: 15px;
         flex-direction: row;
     }

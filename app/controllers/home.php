@@ -59,11 +59,11 @@ class Home extends Controller
     }
 
     public function payement($product){
-        $this->view('main/payement/index');
+        $this->view('main/payement/index',['product'=>$product]);
     }
 
-    public function checkPayement(){
-        $this->homeModel->checkPayement();
+    public function checkPayement($product){
+        $this->homeModel->checkPayement($product);
         $valid = true;
         $this->view('main/payement/valid',['valid'=>$valid]);
     }

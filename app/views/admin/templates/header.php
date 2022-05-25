@@ -12,18 +12,15 @@
     <!-- https://fontawesome.com/ -->
     <link rel="stylesheet" href="<?=ASSETS."admin/"?>css/bootstrap.min.css">
     <!-- https://getbootstrap.com/ -->
-    <link rel="stylesheet" href="<?=ASSETS."admin/"?>css/templatemo-style.css">
+    <link rel="stylesheet" href="<?=ASSETS."admin/"?>css/main.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <!--
-	Product Admin CSS Template
-	https://templatemo.com/tm-524-product-admin
-	-->
+
 </head>
 
 <a href="<?=URLROOT?>home"
     class="btn btn-danger text-center rounded-circle d-flex align-items-center justify-content-center"
-    style="position:fixed;bottom:20px;right:20px;font-size:30px; width:60px; height:60px; padding:0px; margin:0px">
+    style="position:fixed;bottom:20px;right:20px;font-size:30px; width:60px; height:60px; padding:0px; margin:0px;z-index:999;">
     <i class="bi bi-shop-window"></i>
 </a>
 
@@ -34,6 +31,7 @@
                 <a class="navbar-brand" href="index.html">
                     <h1 class="tm-site-title mb-0">Product Admin</h1>
                 </a>
+
                 <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">

@@ -40,7 +40,7 @@ require_once ADMINTEMPLATES."header.php";
                     </table>
                 </div>
                 <!-- table container -->
-                <button class="btn btn-outline-danger btn-block text-uppercase mb-3" type="button" data-toggle="modal"
+                <button class="btn btn-primary btn-block text-uppercase mb-3" type="button" data-toggle="modal"
                     data-target="#add-product">Add
                     new
                     product</button>
@@ -57,7 +57,7 @@ require_once ADMINTEMPLATES."header.php";
                                     echo '
                             <tr>
                                 <td class="tm-product-name">'.$category['category'].'</td>
-                                <td class="text-center">
+                                <td class="text-center d-flex justify-content-end">
                                     <a href="'.URLROOT.'admin/removeCategory/'.$category['category'].'" class="tm-product-delete-link">
                                         <i class="far fa-trash-alt tm-product-delete-icon"></i>
                                     </a>

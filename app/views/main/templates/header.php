@@ -39,7 +39,7 @@
         if($_SESSION['type']=='ADMIN'){
         echo '
     <a href="'.URLROOT.'admin" class="btn btn-danger text-center rounded-circle d-flex align-items-center justify-content-center"
-    style="position:fixed;bottom:20px;right:20px;font-size:30px; width:60px; height:60px; padding:0px; margin:0px">
+    style="position:fixed;bottom:20px;right:20px;font-size:30px; width:60px; height:60px; padding:0px; margin:0px;z-index:">
     <i class="bi bi-gear"></i>
     </a>
         ';

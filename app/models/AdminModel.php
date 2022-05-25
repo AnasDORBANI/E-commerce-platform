@@ -59,4 +59,11 @@ class AdminModel
             echo $e;
         }
     }
+
+    public function getPurchases(){
+        $sql = "SELECT p.order,c.Nom,c.Prenom,p.title,p.time_stamp FROM client c JOIN (SELECT p.*,pr.title FROM purchases p JOIN product pr ON p.product_id = pr.productId) p ON c.userName = p.user ";
+        $this->db->query($sql);
+        $orders = $this->db->resultSet();
+        return $orders;
+    }
 }

@@ -62,7 +62,7 @@ require_once TEMPLATES."header.php";
                         </div>
                         <div>
                             <a type="submit" class=" btn btn-danger rounded-0 btn-block shadow-sm"
-                                href="<?=URLROOT?>home/checkPayement">
+                                href="<?=URLROOT?>home/checkPayement/<?=$data['product']?>">
                                 Confirm
                                 Payment</a>
                     </form>

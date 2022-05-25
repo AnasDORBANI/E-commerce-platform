@@ -9,8 +9,9 @@ class Admin extends Controller
     }
     
     public function index(){
+        $orders = $this->adminModel->getPurchases();
         $active=['active',''];
-        $this->view('admin/dashboard/index',['title'=>'Dashboard','active'=>$active]);
+        $this->view('admin/dashboard/index',['title'=>'Dashboard','active'=>$active,'orders'=>$orders]);
     }
 
     public function products(){
