@@ -44,27 +44,51 @@ class Home extends Controller
 
     public function cart(){
         session_start();
+        if (isset($_SESSION['user'])){
         $products = $this->homeModel->getCart($_SESSION['user']);
         $this->view('main/cart/index',['title'=>'Cart', 'products'=>$products]);
+        } else {
+            redirect('Users/login');
+        }
     }
 
     public function addToCart($product){
+        session_start();
+        if (isset($_SESSION['user'])){
         $this->homeModel->addToCart($product);
         redirect('home/cart');
+        } else {
+            redirect('Users/login');
+        }
     }
 
     public function removeFromCart($cart_id){
+        session_start();
+        if (isset($_SESSION['user'])){
         $this->homeModel->removeFromCart($cart_id);
         redirect('home/cart');
+        } else {
+            redirect('Users/login');
+        }
     }
 
     public function payement($product){
+        session_start();
+        if (isset($_SESSION['user'])){
         $this->view('main/payement/index',['product'=>$product]);
+        } else {
+            redirect('Users/login');
+        }
     }
 
     public function checkPayement($product){
+        session_start();
+        if (isset($_SESSION['user'])){
         $this->homeModel->checkPayement($product);
         $valid = true;
         $this->view('main/payement/valid',['valid'=>$valid]);
+        } else {
+            redirect('Users/login');
+        }
     }
 }

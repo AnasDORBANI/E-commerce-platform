@@ -3,6 +3,9 @@ session_start();
 if (isset($_SESSION['user'])) {
     redirect('home');
 }
+
+require_once USERTEMPLATES."header.php";
+
 ?>
 
 <!DOCTYPE html>
@@ -166,3 +169,9 @@ if (isset($_SESSION['user'])) {
 </body>
 
 </html>
+
+<?php
+
+require_once USERTEMPLATES."footer.php";
+
+?>

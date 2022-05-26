@@ -20,7 +20,11 @@ class App
         }
         
         require_once ROOTPATH.'controllers/'.$this->controller.'.php';
-        $this->controller = new $this->controller;
+        try{
+            $this->controller = new $this->controller;
+        }catch(Exception  $e ){
+            redirect('home');
+        }
 
         if(isset($url[1]))
         {
@@ -32,7 +36,11 @@ class App
         }
 
         $this->params = $url ? array_values($url) : [];
-        call_user_func_array([$this->controller,$this->method],$this->params);
+        try{
+            call_user_func_array([$this->controller,$this->method],$this->params);
+        }catch(Exception  $e ){
+            redirect('home');
+        }
     }
 
     public function parseUrl()
@@ -42,4 +50,3 @@ class App
         }
     }
 }
-

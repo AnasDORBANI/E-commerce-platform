@@ -23,11 +23,6 @@
     <link rel="stylesheet" href="<?=ASSETS."main/"?>css/owl.css">
 
 </head>
-<style>
-#navbarResponsive {
-    justify-content: flex-end !important;
-}
-</style>
 
 <body>
 
@@ -84,23 +79,11 @@
                             <a class="nav-link btn btn-outline-danger rounded-0" href="<?=URLROOT?>home/cart"><i
                                     class="bi bi-basket3-fill"></i> Cart </a>
                         </li>
-                        <?php
-                        session_start();
-                        if(isset($_SESSION['user'])) {
-                            echo
-                            '<li class="nav-item">
-                                <a class="nav-link btn btn-danger rounded-0" href="'.URLROOT.'Users/logout">Logout
-                        <i class="bi bi-box-arrow-right"></i>
-                        </a>
-                        </li>';
-                        } else {
-                        echo
-                        '<li class="nav-item">
-                            <a class="nav-link btn btn-danger rounded-0" href="'.URLROOT.'Users/login">Login
-                        <i class="bi bi-person"></i>
-                        </a>
-                        </li>';
-                        }?>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-danger rounded-0" href="<?=URLROOT?>Users/login">Login
+                                <i class="bi bi-person"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

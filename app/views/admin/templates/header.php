@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if (!$_SESSION['type'] == 'ADMIN') {
+        redirect('home');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
