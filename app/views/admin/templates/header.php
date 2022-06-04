@@ -35,7 +35,7 @@
         <nav class="navbar navbar-expand-xl">
             <div class="container h-100">
                 <a class="navbar-brand" href="index.html">
-                    <h1 class="tm-site-title mb-0">Product Admin</h1>
+                    <img style="width:300px" src="<?=ASSETS?>main/images/logo-inline.png" alt="GIVE'N'TAKE">
                 </a>
 
                 <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse"

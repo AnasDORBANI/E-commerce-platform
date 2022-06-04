@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="inner-content">
-                        <p>Copyright &copy; <?=date("Y")?> Sixteen Clothing Co., Ltd.
+                        <p>Copyright &copy; <?=date("Y")?> GIVE'N'TAKE Co., Ltd.
                     </div>
                 </div>
             </div>

@@ -71,7 +71,6 @@ class Product
     public function addToCart($product){
         $sql = "INSERT INTO cart VALUES(null,?,?)";
         $this->db->query($sql);
-        echo 1;
         session_start();
         $this->db->execute([$_SESSION['user'],$product]);
     }
@@ -79,7 +78,6 @@ class Product
     public function removeFromCart($cart_id){
         $sql = "DELETE FROM cart WHERE id = ?";
         $this->db->query($sql);
-        session_start();
         $this->db->execute([$cart_id]);
     }
 

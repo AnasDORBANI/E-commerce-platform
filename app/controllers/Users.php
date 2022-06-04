@@ -32,7 +32,6 @@ class Users extends Controller {
         }
         //Search for the user
         $user = $this->userModel->findUserByUsername($data['username']);
-        print_r($user);
         if ($user){
             if (password_verify($data['password'],$user['Password'])){
                 
@@ -57,7 +56,6 @@ class Users extends Controller {
 
         if (!$user){
             $data = array(
-                NULL,
                 trim($_POST['username']),
                 password_hash(trim($_POST['password']), PASSWORD_DEFAULT),
                 trim($_POST['fName']),

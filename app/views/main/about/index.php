@@ -22,23 +22,22 @@ require_once TEMPLATES."header.php";
         <div class="row">
             <div class="col-md-12">
                 <div class="section-heading">
-                    <h2>Our Background</h2>
+                    <h2>What's GIVE'N'TAKE</h2>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="right-image">
-                    <img src="assets/images/feature-image.jpg" alt="">
+                    <img src="<?=ASSETS?>main/images/logo-titled.png" style="width:300px" alt="">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="left-content">
                     <h4>Who we are &amp; What we do?</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur
-                        similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem
-                        perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
-                        consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium
-                        quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.</p>
+                    <p>The gray area where humanity and business go hand in hand, where a group of teenagers combine
+                        every inch of creativity they have to plant seeds of joy in hundreds of our hearts. Original
+                        stylish designs, high quality and integrity our products have it all. Give’n’take We’re not
+                        selling you merchandise, we are selling pieces of our hearts, an opportunity to make the world a
+                        better place while treating yourself.</p>
                     <ul class="social-icons">
                     </ul>
                 </div>
@@ -72,9 +71,9 @@ require_once TEMPLATES."header.php";
                         </div>
                     </div>
                     <div class="down-content">
-                        <h4>Johnny William</h4>
+                        <h4>Mallory COUTHON</h4>
                         <span>CO-Founder</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                        <p>DATA SCIENCE & IOT ENGINEER STUDENT.</p>
                     </div>
                 </div>
             </div>
@@ -94,9 +93,9 @@ require_once TEMPLATES."header.php";
                         </div>
                     </div>
                     <div class="down-content">
-                        <h4>Johnny William</h4>
+                        <h4>Anas DORBANI</h4>
                         <span>CO-Founder</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                        <p>DATA SCIENCE & IOT ENGINEER STUDENT.</p>
                     </div>
                 </div>
             </div>
