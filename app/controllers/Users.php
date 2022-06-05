@@ -34,7 +34,7 @@ class Users extends Controller {
         $user = $this->userModel->findUserByUsername($data['username']);
         if ($user){
             if (password_verify($data['password'],$user['Password'])){
-                
+
                 session_start();
                 $_SESSION['user'] = $user["userName"];
                 $_SESSION['type'] = $user['type'];
